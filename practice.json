@@ -1,0 +1,87 @@
+TASK 1 - 28/08/2024
+
+
+----> mongosh
+----> show dbs
+----> use chitkara
+----> db.createCollection("student")
+----> db.createCollection("faculty")
+----> db.creatCollection("user")
+----> db.student.insertMany([{name:"Phalya",age:"20",marks:"100",subject:"Maths",address:"123"},{name:"Priyanshu",age:"22",marks:"98",subject:"English",address:"456"},{name:"Pratham",age:"21",marks:"78",subject:"Hindi",address:"789"},{name:"Walia",age:"29",marks:"79",subject:"Bio",address:"901"},{name:"Rahul",age:"18",marks:"82",subject:"Sanskrit",address:"234"}])
+----> db.faculty.insertMany([{name:"Yogesh",age:"38",subject:"Maths",Rating:"2.5"},{name:"Rupali",age:"42",subject:"English",Rating:"3.5"},{name:"Piyush",age:"56",subject:"Hindi",Rating:"4.5"},{name:"Prachi",age:"32",subject:"Biology",Rating:"4"},{name:"Parag",age:"45",subject:"Sanskrit",Rating:"2"}])
+----> db.user.insertMany([{username:"Raghav",userID:"01"},{username:"Rahul",userID:"02"},{username:"Ranga",userID:"03"},{username:"MullaJi",userID:"04"},{username:"Pratham",userID:"05"}])
+
+TASK 2 - 28/08/2024
+
+
+----> db.CollectionfindOne().age
+
+
+TASK 3 - 28/08/2024
+Update the sunject of all students in the students collection to -> DataScience
+Add a new information with all the documents inside the students - address as "Chitkara University"
+\solution\
+
+db.student.updateMany(
+{},
+{
+$set:{
+    subject: "datascience",
+    address: "Chitkara University"
+}
+
+}
+)
+
+
+TASK 3 - 28/08/2024
+Give "grade: A++" to all those who have marks equal to 90.
+
+\solution\
+
+db.students.updateMany(
+{
+    marks: 90,
+},
+{
+    $set:{
+        grade:"A++"
+    }
+})
+
+
+TASK 1 - 29/08/2024
+Find students whose age is =20 && marks=90
+
+\solution\
+
+
+
+
+
+
+
+
+
+
+TASK 2 - 29/08/2024
+Find students whose age is <=18 && marks<=80
+
+\solution\
+
+
+
+
+
+
+
+
+
+
+TASK 3 - 29/08/2024
+Find students whose marks<=81 , give them "A++" GRADE
+
+\solution\
+
+
+
