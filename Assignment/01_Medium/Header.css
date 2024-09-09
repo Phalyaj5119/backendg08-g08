@@ -1,0 +1,81 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .medium-logo {
+    height: 40px;
+    margin-right: 15px;
+  }
+
+.search-container {
+    position: relative;
+  }
+  
+  .search-bar {
+    padding: 8px 35px 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px; /* Positioning icon inside the search bar */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+  }
+
+  .header-right .btn,
+  .profile-btn {
+    margin-left: 15px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #24242436;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 500px;
+  }
+  
+  .header-right .btn:hover,
+  .profile-btn:hover {
+    background-color: #444;
+    display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  }
+  
+  .signup {
+    margin-left: 15px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #169200;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  .signin {
+    margin-left: 15px;
+    padding: 8px 15px;
+    border: none;
+    color: #000000;
+    cursor:rgb(0, 0, 0)nter;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+
+  .logo {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 20px;
+  }
